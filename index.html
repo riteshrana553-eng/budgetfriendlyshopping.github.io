@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget Friendly Shopping</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f4f6f8; color: #222; }
+    header { background: linear-gradient(135deg, #6a11cb, #2575fc); color: white; padding: 50px 20px; text-align: center; }
+    header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+    header p { font-size: 1.1rem; opacity: 0.95; }
+    nav { background: white; padding: 15px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; }
+    nav a { color: #2575fc; margin: 0 15px; text-decoration: none; font-weight: 600; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+    h2 { text-align: center; margin-bottom: 30px; font-size: 2rem; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px; }
+    .card { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.08); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 15px 30px rgba(0,0,0,0.12); }
+    .card h3 { color: #2575fc; }
+    form { max-width: 500px; margin: auto; }
+    input, textarea { width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #ccc; font-size: 1rem; }
+    button { background: linear-gradient(135deg, #2575fc, #6a11cb); color: white; border: none; padding: 12px; border-radius: 30px; cursor: pointer; font-size: 1rem; width: 100%; }
+    button:hover { opacity: 0.9; }
+    footer { background: #111; color: #ccc; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Budget Friendly Shopping</h1>
+  <p>Affordable Shopping for Everyday Needs</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <h2>Welcome</h2>
+  <p>We provide good quality products at budget-friendly prices. From fashion to home essentials, we focus on value-for-money deals and customer satisfaction.</p>
+</section>
+
+<section id="services">
+  <h2>Our Services / Products</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Fashion</h3>
+      <p>Trendy and affordable clothing for men, women, and kids.</p>
+    </div>
+    <div class="card">
+      <h3>Beauty Products</h3>
+      <p>Quality beauty and personal care products at low prices.</p>
+    </div>
+    <div class="card">
+      <h3>Kitchen Essentials</h3>
+      <p>Daily-use kitchen items that are durable and budget friendly.</p>
+    </div>
+    <div class="card">
+      <h3>Furniture</h3>
+      <p>Simple, strong, and affordable furniture for every home.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Send us your order or inquiry. We will reply quickly.</p>
+  <form action="mailto:riteshrana553@gmail.com" method="post" enctype="text/plain">
+    <p><input type="text" name="Name" placeholder="Your Name" required></p>
+    <p><input type="email" name="Email" placeholder="Your Email" required></p>
+    <p><textarea name="Message" placeholder="Your order or message" rows="4" required></textarea></p>
+    <button type="submit">Send Email</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Budget Friendly Shopping. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
